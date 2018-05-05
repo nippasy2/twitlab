@@ -1,0 +1,13 @@
+.detail{
+  float: left;
+  width:33.33%;
+  height: 40%;
+  font-size:12px;
+  font-weight:bold;
+  text-decoration:none;
+  display:block;
+  text-align:center;
+  padding:8px 0 10px;
+  color:#333;
+  border:1px solid #333;
+}

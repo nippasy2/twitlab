@@ -1,0 +1,15 @@
+#container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#header:after {
+  width: 1200px;
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#header_menu{
+  float: right;
+}

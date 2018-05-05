@@ -1,0 +1,103 @@
+/** http://www.hp-stylelink.com/news/2013/07/20130717.php **/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #DDEEF6;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+.main{
+  background-color: #DDEEF6;
+}
+
+.box{
+  background-color: #FFFFFF;
+  border: solid 1px;
+  border-color: #c0c0c0;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 20px;
+  /** font-weight: bold; **/
+  /** font-size: 60px; **/
+}
+
+.box1{
+  border: solid 8px;
+  box-sizing: border-box;
+  text-align: left;
+  line-height: 20px;
+  /** font-weight: bold; **/
+  /** font-size: 60px; **/
+}
+
+.tweet{
+  /** position: absolute;
+  相対的に位置指定できない
+  top: 20%;
+  left: 55%; **/
+  border-radius: 5px;/*角の丸み*/
+}
+
+.text1{
+  float:left;
+}
+
+.text2{
+  float:right;
+}
+
+.box2{
+  float: left;
+  border-color: yellow;
+  width: 60%;  /** 横幅50% **/
+  height: 800px;
+  }
+
+.text3{
+  float: left;
+  border: solid 1px;
+  border-color: #c0c0c0;
+  width: 100%;  /** 横幅50% **/
+  /**border-top-style: dashed;**/
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: dashed;
+}
+
+.trash{
+  float: right;
+
+}
+
+.tweets{
+
+  border: solid 1px;
+  border-color: #c0c0c0;
+  width: 90%;  /** 横幅50% **/
+  /**border-top-style: dashed;**/
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: dashed;
+}
+
+.status_frame{
+  float: left;
+  background-color: #DDEEF6;
+  border-color: yellow;
+  width: 30%;  /** 横幅50% **/
+  height: 200px;
+  }
+
+.box4{
+  background-color: #8eFFda;
+  float: left;
+  width: 60%;
+}

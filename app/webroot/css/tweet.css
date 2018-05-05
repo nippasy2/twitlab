@@ -1,0 +1,5 @@
+.tweet{
+  position:absolute;
+  left: 80%;
+  border-radius: 5px;/*角の丸み*/
+}

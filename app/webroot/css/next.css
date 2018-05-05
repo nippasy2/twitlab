@@ -1,0 +1,13 @@
+.next{
+      float: right;
+      width:100px;
+      font-size:14px;
+      /** font-weight:bold;**/
+      text-decoration:none;
+      display:block;
+      text-align:center;
+      padding:10px 10px 10px;
+      background-color: #FFFFFF;
+      color:#333;
+      border:1px solid #333;
+  }

@@ -1,0 +1,7 @@
+.roundbox {
+    padding: 0.5em 1em;
+    margin: 0.5em 0.5em;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border-radius: 10px;/*角の丸み*/
+}
