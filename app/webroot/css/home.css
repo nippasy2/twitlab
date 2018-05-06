@@ -18,8 +18,8 @@ body {
 
 .box{
   background-color: #FFFFFF;
-  border: solid 1px;
-  border-color: #c0c0c0;
+  /*border: solid 1px;*/
+  /*border-color: #c0c0c0;*/
   box-sizing: border-box;
   text-align: left;
   line-height: 20px;
@@ -52,13 +52,6 @@ body {
   float:right;
 }
 
-.box2{
-  float: left;
-  border-color: yellow;
-  width: 60%;  /** 横幅50% **/
-  height: 800px;
-  }
-
 .text3{
   float: left;
   border: solid 1px;
@@ -73,7 +66,6 @@ body {
 
 .trash{
   float: right;
-
 }
 
 .tweets{
@@ -88,16 +80,22 @@ body {
   border-bottom-style: dashed;
 }
 
+.main_box{
+  float: left;
+  width: 60%;  /** 横幅50% **/
+  margin-bottom: 2em;
+}
+
+.main_box .home_box{
+  padding: 1em;
+}
+.main_box .pagination{
+  padding: 1em;
+}
 .status_frame{
   float: left;
-  background-color: #DDEEF6;
-  border-color: yellow;
-  width: 30%;  /** 横幅50% **/
-  height: 200px;
-  }
-
-.box4{
-  background-color: #8eFFda;
-  float: left;
-  width: 60%;
+  background-color: white;
+  padding: 1em;
+  width: 38%;  /** 横幅50% **/
+  margin-left: 2%;
 }

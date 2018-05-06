@@ -1,0 +1,31 @@
+#tweet_box{
+  padding: 1em;
+  background-color: #fff;
+  margin-bottom: 1em;
+}
+
+#tweet_box h3{
+  margin:0.5em 0;
+}
+
+
+#tweet_box .textarea{
+  margin-bottom: 1em;
+}
+#tweet_box .textarea textarea{
+  resize:none;
+  width: 100%;
+}
+#tweet_box #tweet_box_recent_tweet{
+  float: left;
+  width: 80%;
+}
+#tweet_box .tweet_btn{
+  float: left;
+  width: 20%;
+}
+#tweet_box .tweet_btn .tweet{
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+}

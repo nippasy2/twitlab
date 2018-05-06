@@ -1,7 +1,7 @@
 <body>
 <?php echo $this->Html->css(['home','link_text','status','next','button','textarea']); ?>
 <div id="main">
-      <div class="box box2">
+      <div class="box main_box">
         <?php $page = 0;
         if(isset($_GET['page'])){
         $page = $_GET['page'];
@@ -52,37 +52,24 @@
             }
           } ?>
         <?php endforeach; ?>
+
+        <div class="box pagination">
+          <?php if($j>1){
+            $k = $j-2;
+            echo $this->Html->link('前の10件', './userpage/' .$pagename. '?page='.$k,array('class'=>'next'));
+          }
+          if(isset($mydatas[10*$j])){
+            echo $this->Html->link('次の10件', './userpage/' .$pagename. '?page='.$j,array('class'=>'next'));
+          }?>
+        </div>
+
       </div>
 
       <div class = "box status_frame">
-        <?php print(h($pagename)); ?>
-        </br>
-        <div class = "detail">
-          <?php echo count($follows);?>
-          </br>
-          <?php echo $this->Html->link('フォローしている', '/users/follow/'.$usern, array('class'=>'link_text'));?>
-        </div>
-        <div class = "detail">
-          <?php echo count($followers);?>
-          </br>
-          <?php echo $this->Html->link('フォローされている', '/users/follower/'.$usern, array('class'=>'link_text'));?>
-        </div>
-        <div class = "detail">
-          <?php echo count($mydatas);?>
-          </br>
-          <?php echo $this->Html->link('投稿数', '/users/tweet/'.$usern, array('class'=>'link_text'));?>
-        </div>
+          <?php echo $this->element('Users/myfollower',["user"=>$user]); ?>
       </div>
+      <div class="clearfix"></div>
 
-      <div class="box box4">
-        <?php if($j>1){
-          $k = $j-2;
-          echo $this->Html->link('前の10件', '/users/userpage/?page='.$k,array('class'=>'next'));
-        }
-        if(isset($mydatas[10*$j])){
-          echo $this->Html->link('次の10件', '/users/userpage/?page='.$j,array('class'=>'next'));
-        }?>
-      </div>
     </div>
   </div>
 </div>

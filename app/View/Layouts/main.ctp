@@ -1,4 +1,3 @@
-
   <head>
     <?php echo $this->Html->charset(); ?>
     <title><?php echo $title_for_layout; ?> / ついったー</title>
@@ -24,11 +23,11 @@
           endif;
         ?>
       </div>
-      <div id="header_logo" style="background-color : #8ec2da">
+      <div id="header_logo">
         <?php echo $this->Html->image('logo.png',array('height'=>'50','url' => array('action' => 'index'))); ?>
       </div>
-      <div id="content">
-        <?php echo $this->fetch('content'); ?>
-      </div>
     </div>
+      <div id="content">
+          <?php echo $this->fetch('content'); ?>
+      </div>
   </body>

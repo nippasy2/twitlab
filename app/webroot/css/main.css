@@ -3,8 +3,13 @@
   margin: 0 auto;
 }
 
+#header{
+  background-color : #8ec2da;
+  padding: 0.2em 1em;
+  margin-bottom: 1em;
+}
+
 #header:after {
-  width: 1200px;
   content: "";
   display: block;
   clear: both;
@@ -12,4 +17,9 @@
 
 #header_menu{
   float: right;
+}
+
+.clearfix{
+  clear: both;
+  display: block;
 }
